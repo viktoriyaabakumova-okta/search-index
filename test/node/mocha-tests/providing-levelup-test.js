@@ -2,7 +2,7 @@
 /* global it */
 
 const Readable = require('stream').Readable
-const levelup = require('levelup')
+const level = require('level')
 const logLevel = process.env.LOG_LEVEL || 'error'
 const sandbox = 'test/sandbox'
 const searchIndex = require('../../../')
@@ -12,7 +12,7 @@ var db, si
 
 describe('Making a search-index with a vanilla (leveldown) levelup: ', function () {
   it('should make a new levelup', function (done) {
-    levelup(sandbox + '/level-to-be-passed', {valueEncoding: 'json'}, function (err, thisDb) {
+    level(sandbox + '/level-to-be-passed', {valueEncoding: 'json'}, function (err, thisDb) {
       ;(!err).should.be.exactly(true)
       db = thisDb
       done()

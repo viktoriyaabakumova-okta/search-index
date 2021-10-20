@@ -4,45 +4,37 @@
   "version": "0.15.2",
   "homepage": "https://github.com/fergiemcdowall/search-index",
   "engines": {
-    "node": ">=4"
+    "node": ">=12"
   },
   "license": "MIT",
   "dependencies": {
     "js-logger": "^1.4.1",
-    "levelup": "^1.3.8",
-    "search-index-adder": "^0.4.0",
-    "search-index-searcher": "^0.4.2"
+    "level": "^7.0.1",
+    "search-index-adder": "git+ssh://git@github.com:viktoriyaabakumova-okta/search-index-adder#master",
+    "search-index-searcher": "git+ssh://git@github.com:viktoriyaabakumova-okta/search-index-searcher#master"
   },
   "devDependencies": {
-    "JSONStream": "^1.1.4",
+    "JSONStream": "1.3.5",
     "brfs": "^1.4.3",
     "browser-run": "^4.0.3",
-    "browserify": "^13.1.0",
+    "browserify": "^17.0.0",
     "commitizen": "^2.10.1",
-    "conventional-github-releaser": "^1.1.13",
+    "conventional-github-releaser": "^3.1.5",
     "cz-conventional-changelog": "^2.0.0",
     "disc": "^1.3.2",
     "highland": "^2.10.0",
     "http-server": "^0.11.1",
     "left-pad": "^1.1.3",
-    "level-js": "^2.2.4",
-    "level-out": "0.0.7",
     "mocha": "^3.2.0",
     "request": "^2.88.0",
     "reuters-21578-json": "0.0.8",
     "should": "^10.0.0",
-    "sqldown": "^2.1.0",
-    "sqlite3": "^3.1.4",
-    "standard": "8.1.0",
-    "standard-changelog": "^1.0.1",
+    "standard": "^8.1.0",
+    "standard-changelog": "^2.0.27",
     "stopword": "^0.1.1",
     "tape": "^4.6.0",
     "term-vector": "0.1.2",
-    "uglify-es": "^3.1.3",
     "written-number": "^0.5.0"
-  },
-  "optionalDependencies": {
-    "leveldown": "^1.9.0"
   },
   "author": {
     "email": "fergusmcdowall@gmail.com",
